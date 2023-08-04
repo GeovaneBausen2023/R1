@@ -23,4 +23,5 @@ function testar() {
 -O chat gpt e apenas um gerador de texto burro que erra um if simples e traz soluções nada ver a maior parte do 
 tempo, aprenda usa-lo com sabedoria.
 -Estude com paciência
+nova branch
 */
