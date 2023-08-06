@@ -1,4 +1,4 @@
-/*ex1*/
+/*condicionais simples*/
 var inVelocidade = window.document.getElementById("inVelocidade");
 var btOK = window.document.getElementById("btOK");
 var outMensagem = window.document.getElementById("outMensagem");

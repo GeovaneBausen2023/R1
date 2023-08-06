@@ -1,4 +1,4 @@
-/*ex3*/
+/*condicionais multiplas*/
 var agora = new Date();
 var diaDaSemana = agora.getDay();
 /*

@@ -1,4 +1,4 @@
-/*ex2*/
+/*condicionais aninhadas*/
 var inIdade = window.document.getElementById("inIdade");
 var btOK = window.document.getElementById("btOK");
 var outMensagem = window.document.getElementById("outMensagem");
