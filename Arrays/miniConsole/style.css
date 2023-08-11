@@ -25,21 +25,72 @@
     margin-right: 1%;
   }
   
+  
   .output p {
     width: 100%;
+    margin-bottom: 10px; /* Adicionar margem inferior para separar as saídas */
   }
   
   .input input {
-    width: 96%;
+    width: auto; /* Remova a largura fixa */
     float: left;
     border: none;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.5;
     font-family: monospace;
-    padding: 0;
+    padding: 5px;
     background: #0c323d;
-    color: #ffffff;
+    color: #809089;* {
+      box-sizing: border-box;
+    }
+    
+    html {
+      background-color: #0c323d;
+      color: #ffffff;
+      font-family: monospace;
+    }
+    
+    body {
+      max-width: 700px;
+    }
+    
+    p {
+      margin: 0;
+      width: 1%;
+      padding: 0 1%;
+      font-size: 16px;
+      line-height: 1.5;
+      float: left;
+    }
+    
+    .input p {
+      margin-right: 1%;
+    }
+    
+    .output p {
+      width: 100%;
+    }
+    
+    .input input {
+      width: 96%;
+      float: left;
+      border: none;
+      font-size: 16px;
+      line-height: 1.5;
+      font-family: monospace;
+      padding: 0;
+      background: #0c323d;
+      color: #ffffff;
+    }
+    
+    div {
+      clear: both;
+    }
+    
+    resize: none; /* Impede que o usuário redimensione manualmente o campo */
+    overflow: hidden; /* Inicialmente, esconda o conteúdo que excede o campo */
   }
+  
   
   div {
     clear: both;
