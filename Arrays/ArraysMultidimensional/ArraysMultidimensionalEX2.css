@@ -1,0 +1,23 @@
+body {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 50%;
+    margin: 20px auto;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  #code-display{
+    text-align: center;
+  }
