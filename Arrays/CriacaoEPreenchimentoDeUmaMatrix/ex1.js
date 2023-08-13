@@ -3,20 +3,13 @@ Desenvolva uma aplicação que crie e mostre uma matriz de dimensões NxM (ou se
 n=linhas
 m=colunas
 
-n  |0.0|0.1|0.2|0.3|
-n  |1.0|1.1|1.2|1.3|
-n  |2.0|2.1|2.2|2.3|
-n  |3.0|3.1|3.2|3.3|
-n  |4.0|4.1|4.2|4.3|
+  n  |0.0|0.1|0.2|0.3|
+  n  |1.0|1.1|1.2|1.3|
+  n  |2.0|2.1|2.2|2.3|
+  n  |3.0|3.1|3.2|3.3|
+  n  |4.0|4.1|4.2|4.3|
 
 ---------
-1 Criar html com imputs para N linhas,  M colunas, botão e saida depois referencialos por id no js
-2 Adcionar interação com o botão com o evento "click"
-3 criar função 
-4 validar entradas do usuario
-5 
-
-
 
 */
 var inNLinhas = document.getElementById("inNLinhas");
@@ -27,9 +20,9 @@ var saida = document.getElementById("out");
 btOk.addEventListener("click", gerar)
 
 function gerar() {
-  var linhas = inNLinhas.value;
-  var colunas = inMColunas.value;
- 
+  var nLinhas = inNLinhas.value;
+  var mColunas = inMColunas.value;
+
   if (inNLinhas.value < 0 || inNLinhas.value == "") {
     alert("insira os dados corretamente...");
     inNLinhas.focus();
@@ -38,6 +31,27 @@ function gerar() {
     inMColunas.focus();
 
   } else {
-   
+
+    var matrix = [];
+
+    for (var i = 0; i < nLinhas; i++) {
+      var row = [];
+      for (var j = 0; j < mColunas; j++) {
+        row.push(i + "." + j);
+      }
+      matrix.push(row);
+    }
+    // Limpar conteúdo anterior da saída
+    saida.innerHTML = "";
+
+    // Exibir a matriz na saída
+    for (var i = 0; i < nLinhas; i++) {
+      var linhaFormatada = "";
+      for (var j = 0; j < mColunas; j++) {
+        linhaFormatada += "|" + matrix[i][j];
+      }
+      linhaFormatada += "|<br>";
+      saida.innerHTML += linhaFormatada;
     }
   }
+}
