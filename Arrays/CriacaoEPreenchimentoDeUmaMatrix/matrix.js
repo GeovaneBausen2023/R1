@@ -34,24 +34,29 @@ function gerar() {
 
     var matrix = [];
 
-    for (var i = 0; i < nLinhas; i++) {
-      var row = [];
-      for (var j = 0; j < mColunas; j++) {
-        row.push(i + "." + j);
+    for (var lin = 0; lin < nLinhas; lin++) {
+      var vetLinha = [];
+        for (var col = 0; col < mColunas; col++) {
+          vetLinha.push(lin + "." + col);
+        }
+        matrix.push(vetLinha);
       }
-      matrix.push(row);
-    }
     // Limpar conteúdo anterior da saída
     saida.innerHTML = "";
 
     // Exibir a matriz na saída
-    for (var i = 0; i < nLinhas; i++) {
-      var linhaFormatada = "";
-      for (var j = 0; j < mColunas; j++) {
-        linhaFormatada += "|" + matrix[i][j];
-      }
-      linhaFormatada += "|<br>";
-      saida.innerHTML += linhaFormatada;
+    var linhasFormatadas = [];
+
+    for (var lin = 0; lin < nLinhas; lin++) {
+      var linhaFormatada = "|";
+        for (var col = 0; col < mColunas; col++) {
+          linhaFormatada += matrix[lin][col] + "|";
+        }
+        linhasFormatadas.push(linhaFormatada);
     }
+
+    var html = linhasFormatadas.join("<br>");
+    saida.innerHTML = html;
+
   }
 }
