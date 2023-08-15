@@ -36,23 +36,24 @@ function gerar() {
 
     for (var lin = 0; lin < nLinhas; lin++) {
       var vetLinha = [];
-        for (var col = 0; col < mColunas; col++) {
-          vetLinha.push(lin + "." + col);
-        }
-        matrix.push(vetLinha);
+      for (var col = 0; col < mColunas; col++) {
+        vetLinha.push(lin + "." + col);
       }
+      matrix.push(vetLinha);
+    }
     // Limpar conteúdo anterior da saída
     saida.innerHTML = "";
+    inNLinhas.focus();
 
     // Exibir a matriz na saída
     var linhasFormatadas = [];
 
     for (var lin = 0; lin < nLinhas; lin++) {
-      var linhaFormatada = "|";
-        for (var col = 0; col < mColunas; col++) {
-          linhaFormatada += matrix[lin][col] + "|";
-        }
-        linhasFormatadas.push(linhaFormatada);
+      var linhaFormatada = " | ";
+      for (var col = 0; col < mColunas; col++) {
+        linhaFormatada += matrix[lin][col] + " | ";
+      }
+      linhasFormatadas.push(linhaFormatada);
     }
 
     var html = linhasFormatadas.join("<br>");

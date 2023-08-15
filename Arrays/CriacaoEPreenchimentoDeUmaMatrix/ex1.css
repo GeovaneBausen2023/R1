@@ -1,23 +1,36 @@
 body {
-    background-color: #000;
-    color: #fff;
-  }
-  
-  table {
-    border-collapse: collapse;
-    width: 50%;
-    margin: 20px auto;
-  }
-  
-  th, td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: center;
-  }
-  
-  th {
-    background-color: #f2f2f2;
-  }
-  body{
-    text-align: center;
-  }
+  background-color: #0c323d;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin: 0; /* Remova margens padrão */
+  padding: 20px; /* Adicione algum espaçamento interno */
+}
+
+.inputGroup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.inputGroup input {
+  margin: 0 7px 0 0; /* Espaçamento à direita dos inputs */
+  padding-right: 10px; /* Espaçamento interno à direita dos inputs */
+}
+
+#out {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+}
+
+h1 {
+  display: inline-block;
+}
+
+p {
+  font-size: 25px;
+}
+
+input {
+  width: 40px; /* Aumente um pouco a largura dos inputs */
+}

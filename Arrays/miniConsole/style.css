@@ -32,7 +32,7 @@
   }
   
   .input input {
-    width: auto; /* Remova a largura fixa */
+    width: auto; 
     float: left;
     border: none;
     font-size: 18px;
@@ -83,16 +83,6 @@
       color: #ffffff;
     }
     
-    div {
-      clear: both;
-    }
-    
-    resize: none; /* Impede que o usuário redimensione manualmente o campo */
-    overflow: hidden; /* Inicialmente, esconda o conteúdo que excede o campo */
   }
-  
-  
-  div {
-    clear: both;
-  }
+
   
