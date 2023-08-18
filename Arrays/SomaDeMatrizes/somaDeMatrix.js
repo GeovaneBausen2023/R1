@@ -12,6 +12,10 @@ const mat2 = [
   [5, 7, 32, 11, 67, 9, 57, 13, 65]
 ];
 
+
+
+
+
 // Criar uma matriz auxiliar para armazenar a soma das matrizes
 const matrizAuxiliar = [];
 
