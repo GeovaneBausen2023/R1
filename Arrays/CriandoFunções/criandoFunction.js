@@ -18,7 +18,7 @@ function somarElementos(vetor){
 alert(somarElementos(vetKM));
 
 
-//função para retornar a posição de menor valor
+/*função para retornar a posição de menor valor
 
 function menorValor(vetor){
   var acumuladora = 0;
@@ -30,3 +30,4 @@ function menorValor(vetor){
   return acumuladora;
 }
 alert(menorValor(vetKM));
+*/
