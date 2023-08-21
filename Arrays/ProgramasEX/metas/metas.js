@@ -1,5 +1,5 @@
 var pacientes = []; // declara vetor global
-//referência aos elementos html
+// referência aos elementos html
 var inPaciente = document.getElementById("inPaciente");
 var btAdicionar = document.getElementById("btAdicionar");
 var btUrgencia = document.getElementById("btUrgencia");
@@ -13,7 +13,7 @@ btUrgencia.addEventListener("click", urgencia);
 btAtender.addEventListener("click", atenderPaciente);
 
 function adcionarPacientes() {
-    var nome = inPaciente.value
+    var nome = inPaciente.value;
     if (nome == "") {
         alert("Informe o nome do paciente");
         inPaciente.focus();
@@ -24,17 +24,17 @@ function adcionarPacientes() {
 
     // percorre os elementos do vetor
     for (i = 0; i < pacientes.length; i++) {
-        lista += (i + 1) + ". " + pacientes[i] + "\n";
-        //lista = lista + ...pacientes[i]...;
+        lista += (i + 1) + ". " + pacientes[i] + "<br>";
     }
     // altera o conteúdo da tag outLista
-    outLista.textContent = lista;
+    outLista.innerHTML = lista;
     // limpa campo e posiciona cursor em inPaciente
     inPaciente.value = "";
     inPaciente.focus();
 }
+
 function urgencia() {
-    var nome = inPaciente.value
+    var nome = inPaciente.value;
     if (nome == "") {
         alert("Informe o nome do paciente");
         inPaciente.focus();
@@ -45,17 +45,17 @@ function urgencia() {
 
     // percorre os elementos do vetor
     for (i = 0; i < pacientes.length; i++) {
-        lista += (i + 1) + ". " + pacientes[i] + "\n";
-        //lista = lista + ...pacientes[i]...;
+        lista += (i + 1) + ". " + pacientes[i] + "<br>";
     }
     // altera o conteúdo da tag outLista
-    outLista.textContent = lista;
+    outLista.innerHTML = lista;
     // limpa campo e posiciona cursor em inPaciente
     inPaciente.value = "";
     inPaciente.focus();
 }
+
 function atenderPaciente() {
-    //verifica se vetor pacientes está vazio
+    // verifica se vetor pacientes está vazio
     if (pacientes.length == 0) {
         alert("Não há pacientes na lista de espera");
         inPaciente.focus();
@@ -69,10 +69,8 @@ function atenderPaciente() {
     var lista = "";
     // percorre os elementos do vetor
     for (i = 0; i < pacientes.length; i++) {
-        lista += (i + 1) + ". " + pacientes[i] + "\n";
+        lista += (i + 1) + ". " + pacientes[i] + "<br>";
     }
     // altera o conteúdo da tag outLista
-    outLista.textContent = lista
+    outLista.innerHTML = lista;
 }
-
- 

@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #202124;
+    background-color: rgb(254, 249, 249);
     font-size: 30px;
 
     width: 100vw;
@@ -15,8 +15,13 @@ body {
     flex-direction: column;
 }
 
+.logo {
+    height: 150px;
+    width: 150px;
+}
+
 .header {
-    background: #202124;
+    background: #0D0D0D;
     height: 60px;
     font-size: 16;
 
@@ -24,13 +29,15 @@ body {
     justify-content: flex-end;
     align-items: center;
     padding-right: 20px;
+
+    border-bottom: 1px solid #15BF2F;
 }
 
 .link {
     text-decoration: none;
     padding-left: 10px;
     padding-right: 10px;
-    color: #FFFFFF;
+    color: #18D935;
     font-weight: 400;
     font-size: 14px;
 }
@@ -39,20 +46,19 @@ ion-icon {
     font-size: 20px;
     padding: 8px;
     border-radius: 20px;
-    color: white;
+    color: #18D935;
     transition: .3s;
 }
 
 ion-icon:hover {
     background: #303134;
     border-radius: 20px;
-
 }
 
 .btn {
-    background: #000000;
+    background:  #18D935;
     padding: 8px 15px 8px 15px;
-    color: rgb(255, 255, 255);
+    color: #0D0D0D;
     border-radius: 5px;
     margin-left: 10px;
 }
@@ -60,65 +66,78 @@ ion-icon:hover {
 .btn:hover {
     background: #303134;
     color: #FFFFFF;
-
 }
 
 .pesquisa {
-    background: #303134;
+    background: #0D0D0D;
     height: 40px;
     min-width: 50vw;
     max-width: 75vw;
     border-radius: 20px;
     border: 1px solid;
-    color: #FFFFFF;
+    color: #18D935;
     padding: 5px;
     font-size: 16px;
     margin: 10px;
 }
 
 .pesquisa:hover {
-    box-shadow: 2px 2px 2px 1px  #79797a; 
-    
+    box-shadow: 2px 2px 2px 1px  #18D935; 
 }
-
 
 .btn-cinza {
     font-size: 13px;
     text-decoration: none;
-    background: #303134;
+    background: #15BF2F;
     padding: 8px 20px 8px 20px;
-    color: rgb(255, 255, 255);
+    color: #0D0D0D;
     border-radius: 5px;
     margin-left: 5px;
 }
 
 .main {
-    background: #202124;
+    background: #ffffff;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-bottom: 1px solid #15BF2F;
 }
 
 .footer {
-    color: #9EA4AA;
-    background: #171717;
+    color: #18D935;
+    background: #0D0D0D;
     height: 60px;
-    border-bottom: 1px solid #404548;
+    border-bottom: 1px solid #15BF2F;
     font-size: 18px;
     padding: 18px;
     display: flex;
     align-items: center;
 }
+
 .footer1 {
-    color: #9EA4AA;
-    background: #171717;
+    color: #D9D9D9;
+    background: #0D0D0D;
     height: 20px;
     border-bottom: 1px solid #404548;
     font-size: 18px;
     padding: 20px;
     display: flex;
     align-items: center;
+}
 
+/* New styles for the task container and output font color */
+.outAtendimento {
+    border: 2px solid #18D935;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+}
+.h3{
+color: #0D0D0D;
+}
+
+.outLista {
+    color: #18D935;
 }
