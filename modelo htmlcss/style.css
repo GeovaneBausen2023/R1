@@ -14,30 +14,33 @@ body {
     display: flex;
     flex-direction: column;
 }
-.img-conteiner{
-  
+
+.img-container {
+    height: 60px; /* Mesma altura da .header para alinhar verticalmente */
+    display: flex;
+    align-items: center; /* Centralizar verticalmente */
+    margin-left: auto; /* Empurra o contêiner para a direita */
 }
+
+.logo {
+    max-height: 100%; /* A imagem terá altura máxima igual à altura do .img-container */
+    max-width: 100%; /* A imagem terá largura máxima igual à largura do .img-container */
+}
+
+
 .header {
     background: #0D0D0D;
     height: 60px;
     font-size: 16;
 
     display: flex;
-    justify-content: space-between; /* Alterado para space-between */
+    justify-content: flex-end;
     align-items: center;
     padding-right: 20px;
 
     border-bottom: 1px solid #15BF2F;
+    justify-content: space-between;
 }
-
-.logo {
-    height: 40px;
-    width: 40px;
-    margin-left: 50px; /* Mova a imagem para a direita */
-    padding: 20px 20px 20px 20px;
-    border-bottom: 1px solid #15BF2F;
-}
-
 
 .link {
     text-decoration: none;
@@ -109,7 +112,6 @@ ion-icon:hover {
     justify-content: center;
     align-items: center;
     border-bottom: 1px solid #15BF2F;
-    
 }
 
 .footer {
@@ -121,7 +123,6 @@ ion-icon:hover {
     padding: 18px;
     display: flex;
     align-items: center;
-    
 }
 
 .footer1 {

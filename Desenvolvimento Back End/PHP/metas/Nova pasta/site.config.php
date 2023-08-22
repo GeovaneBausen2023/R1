@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+<?php
+
+$site_header = '<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -20,7 +22,7 @@
         </div>
         <div class="icons">
         <a href="#" class="link">Home</a>
-        <a href="#" class="link">Sobre</a>
+        <a href="sobre.html" class="link">Sobre</a>
         <ion-icon name="bag-handle-outline"></ion-icon>
         <a href="#" class="link btn">Fazer Login</a>
     </div>
@@ -39,9 +41,9 @@
             <span id="outAtendimento"></span>
         </h3>
         <p id="outLista"></p>
-    </div>
-    
-    <div class="footer">Brasil</div>
+    </div>';
+
+    $site_footer = '<div class="footer">Brasil</div>
     <div class="footer1">
         <a href="#" class="link">Sobre</a>
         <a href="#" class="link">Como funciona o programa</a>
@@ -53,4 +55,6 @@
     <script src="metas.js"></script>
 </body>
 
-</html>
+</html>';
+
+?>
