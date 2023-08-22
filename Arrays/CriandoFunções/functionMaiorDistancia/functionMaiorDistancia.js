@@ -1,4 +1,6 @@
-//maior distancia percorrida
+//Qual a viagem de maior distância percorrida? 
+//(informar a placa do caminhão, a quilometragem percorrida e o consumo médio)
+
 function indexMaiorElemento(vetor) {
     var indexMaiorDistancia = 0;//iniciando com indice 0
 

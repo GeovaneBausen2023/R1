@@ -1,4 +1,5 @@
-//menor consumo
+//Qual a viagem de menor consumo? ]
+//(informar a placa do caminhão, a quilometragem percorrida e o consumo médio)
 function indexMenorElemento(vetor){
     var indexMenor = 0;
 

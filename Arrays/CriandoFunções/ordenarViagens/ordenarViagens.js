@@ -1,35 +1,29 @@
-// Função para ordenar viagens com base na quilometragem
-function ordenarViagens(vetorPlaca, vetorKM, vetorConsumo) {
-    const totalViagens = vetorKM.length;
+var out = document.getElementById("out");
 
-    for (let i = 0; i < totalViagens - 1; i++) {
-        let indiceMenor = i;
+function ordenarNum(vetor) {
+    for (var ind = 0; ind < vetor.length - 1; ind++) {
+        var indMenor = ind;
 
-        for (let j = i + 1; j < totalViagens; j++) {
-            if (vetorKM[j] < vetorKM[indiceMenor]) {
-                indiceMenor = j;
+        for (var indDois = ind + 1; indDois < vetor.length; indDois++) {
+            if (vetor[indDois] < vetor[indMenor]) {
+                indMenor = indDois;
             }
         }
-
-        // Trocar valores nos arrays usando destructuring assignment
-        [vetorKM[i], vetorKM[indiceMenor]] = [vetorKM[indiceMenor], vetorKM[i]];
-        [vetorPlaca[i], vetorPlaca[indiceMenor]] = [vetorPlaca[indiceMenor], vetorPlaca[i]];
-        [vetorConsumo[i], vetorConsumo[indiceMenor]] = [vetorConsumo[indiceMenor], vetorConsumo[i]];
+        var aux = vetor[ind];
+        vetor[ind] = vetor[indMenor];
+        vetor[indMenor] = aux;
     }
-}
-// Chamar a função de ordenação
-ordenarViagens(vetPlaca, vetKM, vetConsumo);
-
-// Mostrar informações das viagens
-let viagensInfo = "";
-
-for (let i = 0; i < vetKM.length; i++) {
-    viagensInfo +=
-        `Viagem ${i + 1}:\n` +
-        `Placa: ${vetPlaca[i]}\n` +
-        `Quilometragem: ${vetKM[i]} Km\n` +
-        `Consumo: ${vetConsumo[i]} L\n` +
-        "-------------------------\n";
+    return vetor;
 }
 
-alert(viagensInfo);
+var vetorOrdenado = ordenarNum(vetKM);
+var indMaiorDistancia = vetorOrdenado.length - 1;
+
+for (var i = 0; i < vetorOrdenado.length; i++) {
+    out.innerHTML +=
+    "Placa: " + vetPlaca[i] 
+    +"<br>Quilometragem: " + vetorOrdenado[i] + " Km" 
+    +"<br>Consumo: " + vetConsumo[i] + " L<br><br>";
+}
+
+

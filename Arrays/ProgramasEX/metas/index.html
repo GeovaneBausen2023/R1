@@ -11,7 +11,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Roboto:wght@300;400;700&display=swap"
         rel="stylesheet">
-
 </head>
 
 <body>
@@ -22,18 +21,19 @@
         <a href="#" class="link btn">Fazer Login</a>
     </div>
     <div class="main">
-        <img class="logo" src="logo.png"Logo">
+        <img class="logo" src="logo.png" alt="Logo">
 
-        <input class="pesquisa" type="text" id="inPaciente" autofocus>
+        <input class="pesquisa" type="text" id="inTarefa" autofocus>
 
         <div class="botoes">
-        <input type="button"  class="btn-cinza" value="Adicionar Terefa" id="btAdicionar">
-        <input type="button" class="btn-cinza" value="Urgência" id="btUrgencia">
-        <input type="button" class="btn-cinza" value="Em progresso" id="btAtender">
+            <input type="button" class="btn-cinza" value="Adicionar Tarefa" id="btAdicionarTarefa">
+            <input type="button" class="btn-cinza" value="Urgência" id="btUrgencia">
+            <input type="button" class="btn-cinza" value="Em progresso" id="btAtender">
         </div>
-        <h3>Em Atendimento:
+        <h3>Em processo:
             <span id="outAtendimento"></span>
-            <p id="outLista"></p>
+        </h3>
+        <p id="outLista"></p>
     </div>
     <div class="footer">Brasil</div>
     <div class="footer1">
@@ -45,7 +45,6 @@
     </div>
 
     <script src="metas.js"></script>
-    
 </body>
 
 </html>

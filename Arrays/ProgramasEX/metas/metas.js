@@ -1,76 +1,53 @@
-var pacientes = []; // declara vetor global
-// referência aos elementos html
-var inPaciente = document.getElementById("inPaciente");
-var btAdicionar = document.getElementById("btAdicionar");
+var vetTarefas = [];
+var inTarefa = document.getElementById("inTarefa");
+var btAdicionarTarefa = document.getElementById("btAdicionarTarefa");
 var btUrgencia = document.getElementById("btUrgencia");
 var btAtender = document.getElementById("btAtender");
-
 var outAtendimento = document.getElementById("outAtendimento");
 var outLista = document.getElementById("outLista");
 
-btAdicionar.addEventListener("click", adcionarPacientes);
+btAdicionarTarefa.addEventListener("click", adicionarTarefa);
 btUrgencia.addEventListener("click", urgencia);
 btAtender.addEventListener("click", atenderPaciente);
 
-function adcionarPacientes() {
-    var nome = inPaciente.value;
-    if (nome == "") {
-        alert("Informe o nome do paciente");
-        inPaciente.focus();
+function adicionarTarefa() {
+    var descricaoTarefa = inTarefa.value;
+    if (descricaoTarefa == "") {
+        alert("Informe a descrição da tarefa");
+        inTarefa.focus();
         return;
     }
-    pacientes.push(nome); // adiciona o nome no final do vetor
-    var lista = ""; // string para concatenar pacientes
-
-    // percorre os elementos do vetor
-    for (i = 0; i < pacientes.length; i++) {
-        lista += (i + 1) + ". " + pacientes[i] + "<br>";
-    }
-    // altera o conteúdo da tag outLista
-    outLista.innerHTML = lista;
-    // limpa campo e posiciona cursor em inPaciente
-    inPaciente.value = "";
-    inPaciente.focus();
+    vetTarefas.push(descricaoTarefa);
+    updateLista();
 }
 
 function urgencia() {
-    var nome = inPaciente.value;
-    if (nome == "") {
-        alert("Informe o nome do paciente");
-        inPaciente.focus();
+    var descricaoTarefa = inTarefa.value;
+    if (descricaoTarefa =="") {
+        alert("Informe a descrição da tarefa");
+        inTarefa.focus();
         return;
     }
-    pacientes.unshift(nome); // adiciona o nome no início do vetor
-    var lista = ""; // string para concatenar pacientes
-
-    // percorre os elementos do vetor
-    for (i = 0; i < pacientes.length; i++) {
-        lista += (i + 1) + ". " + pacientes[i] + "<br>";
-    }
-    // altera o conteúdo da tag outLista
-    outLista.innerHTML = lista;
-    // limpa campo e posiciona cursor em inPaciente
-    inPaciente.value = "";
-    inPaciente.focus();
+    vetTarefas.unshift(descricaoTarefa);
+    updateLista();
 }
 
 function atenderPaciente() {
-    // verifica se vetor pacientes está vazio
-    if (pacientes.length == 0) {
-        alert("Não há pacientes na lista de espera");
-        inPaciente.focus();
+    if (vetTarefas.length === 0) {
+        alert("Não há tarefas na lista");
         return;
     }
-    // remove paciente do início da fila (e obtém nome)
-    var atender = pacientes.shift();
-    // exibe nome do paciente em atendimento
-    outAtendimento.textContent = atender;
-    // string para concatenar pacientes
+    var tarefa = vetTarefas.shift();
+    outAtendimento.textContent = tarefa;
+    updateLista();
+}
+
+function updateLista() {
     var lista = "";
-    // percorre os elementos do vetor
-    for (i = 0; i < pacientes.length; i++) {
-        lista += (i + 1) + ". " + pacientes[i] + "<br>";
+    for (var i = 0; i < vetTarefas.length; i++) {
+        lista += (i + 1) + ". " + vetTarefas[i] + "<br>";
     }
-    // altera o conteúdo da tag outLista
     outLista.innerHTML = lista;
+    inTarefa.value = "";
+    inTarefa.focus();
 }
