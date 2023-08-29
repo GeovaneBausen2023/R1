@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap');
+
+/*Header*/
+header {
+    background-color: #d3d3d3;
+    padding: 20px 0;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: 'Montserrat', 'sans-serif';
+}
+
+.caixa {
+    width: 940px;
+    background: #d3d3d3;
+    position: relative;
+    margin: 0 auto;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+    background-color: #d3d3d3;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none
+}
+
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+/*main*/
+main {
+    width: 940px;
+    margin: 0 auto;
+}
+
+form {
+    margin: 40px 0;
+}
+
+form label {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+legend {
+    font-size: 22px;
+}
+
+.input-block {
+    display: block;
+    width: 50%;
+    margin-bottom: 20px;
+    font-size: 22px;
+    padding: 4px 7px;
+}
+
+.impute-inline {
+    margin-bottom: 20px;
+    margin-right: 10px;
+    font-size: 22px;
+}
+
+.enviar {
+    width: 40%;
+    padding: 15px 0;
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+table {
+    margin: 40px auto;
+}
+
+thead {
+    background-color: #999999;
+    color: white;
+    font: bold;
+}
+
+th,td {
+    width: 300px;
+    padding: 3px;
+    border: 1px solid #999999;
+    padding: 3px;
+    font-size: 20px;
+}
+
+.enviar:hover {
+    background-color: red;
+    transform: scale(1.2)rotate(4);
+}
+
+/*footer*/
+.copyright {
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px 0 0 0;
+}
+
+footer {
+    text-align: center;
+    background: url("../imagens-geral/bg.jpg");
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Estoque</title>
+    <style>
+      body {
+        background-color: black;
+        font-family: Arial, sans-serif;
+      }
+      h1 {
+        color: green;
+        text-align: center;
+      }
+      table {
+        margin: auto;
+        border-collapse: collapse;
+        width: 80%;
+      }
+      th, td {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #0cbb1d;
+        color: green;
+      }
+      th {
+        background-color: #4CAF50;
+        color: rgb(255, 255, 255);
+      }
+      input[type="text"] {
+        width: 60px;
+      }
+      button {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Estoque</h1>
+    <table>
+      <tr>
+        <th>Item</th>
+        <th>Quantidade</th>
+        <th></th>
+      </tr>
+      <tr>
+        <td>Bebidas</td>
+        <td><input type="text" id="bebidasInput"></td>
+        <td><button onclick="salvarQuantidade('bebidas')">Salvar</button></td>
+      </tr>
+      <tr>
+        <td>Papel Toalha</td>
+        <td><input type="text" id="papelToalhaInput"></td>
+        <td><button onclick="salvarQuantidade('papelToalha')">Salvar</button></td>
+      </tr>
+      <tr>
+        <td>Guardanapo</td>
+        <td><input type="text" id="guardanapoInput"></td>
+        <td><button onclick="salvarQuantidade('guardanapo')">Salvar</button></td>
+      </tr>
+      <!-- Adicione as outras linhas da tabela aqui -->
+    </table>
+    <script src="script.js"></script>
+  </body>
+</html>

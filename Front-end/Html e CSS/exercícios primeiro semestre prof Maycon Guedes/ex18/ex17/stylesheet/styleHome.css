@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap');
+
+header {
+    background-color: rgb(173, 173, 173);
+
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: 'Montserrat', 'sans-serif';
+}
+
+.caixaHeader {
+    width: 940px;
+    background: rgb(173, 173, 173);
+    position: relative;
+    margin: 0 auto;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+    background-color: rgb(173, 173, 173);
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none
+}
+
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+.banner {
+    width: 100%;
+}
+
+.blocoTexto {
+    width: 940px;
+    display: block;
+    margin: 0 auto
+}
+
+h1 {
+    color: #030202;
+    font-size: 35px;
+    padding: 20px;
+}
+
+.missaoP {
+    text-align: center;
+}
+
+.imgEquipamentos {
+    width: 250px;
+    float: left;
+    margin: 0 15px 15px 0;
+    padding: 1px;
+}
+
+p {
+    font-size: 18px;
+    padding: 2px;
+    text-align: justify;
+}
+
+p strong {
+    font-weight: bold;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+ul {
+    color: #000000;
+    font-size: 22px;
+    padding: 30px;
+}
+
+.localizacaoMaps {
+    text-align: center;
+    width: 940px;
+    margin: 0 auto
+}
+
+.tituloBeneficios {
+    text-align: center;
+}
+
+.container {
+    width: 940px;
+    height: 320px;
+    margin: 0 auto;
+    font-size: 0;
+    /* Remove espaço em branco entre os elementos inline-block */
+    text-align: center;
+    /* Centraliza os elementos */
+}
+
+.imagem,
+.lista {
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    font-size: 16px;
+    /* Restaura o tamanho da fonte */
+    vertical-align: top;
+    /* Alinha os elementos ao topo */
+    text-align: justify;
+}
+
+.imagem img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.container2 {
+    width: 940px;
+    height: 320px;
+    margin: 0 auto;
+    font-size: 0;
+    /* Remove espaço em branco entre os elementos inline-block */
+    text-align: center;
+    /* Centraliza os elementos */
+    background-color: rgb(255, 255, 255);
+}
+
+.copyright {
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px 0 0 0;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    background: url("../imagens-geral/bg.jpg");
+}

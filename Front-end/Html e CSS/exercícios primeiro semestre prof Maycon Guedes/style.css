@@ -1,0 +1,99 @@
+header{
+    background-color:  #d3d3d3;
+    padding: 20px 0;
+    
+}
+.caixa{
+    width: 940px;
+    background: #d3d3d3;
+    position: relative;
+    margin: 0 auto;
+
+}
+nav li{
+    display:inline;
+    margin: 0 0 0 15px; 
+    background-color:  #d3d3d3;
+}
+nav a{
+text-transform: uppercase;
+color:#000000;
+font-weight:bold;
+font-size:22px;
+text-decoration:none
+}
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+#banner{
+    width: 100%;
+    padding: 0px;
+} 
+.principal{
+    background-color: #CCCCCC; 
+}  
+h1{
+    text-align:center;
+    border-top:0px solid #000000;
+    padding-left: 20px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    font-size: 30px;
+    margin-top: 10px;
+}
+p{
+    font-size: 20px;
+    padding: 10px;
+}
+#fontegrande{
+    font-size: 25px;
+    text-align: center;
+}
+strong{
+    color:crimson;
+}
+.titulo{
+    border-top:0px solid #000000;
+    padding-left: 20px;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+
+.listaConteiner{
+    display: inline-block; 
+    font-size: 20px;
+    width: 50%;  
+}
+.imagem {
+    display: inline-block; 
+    width: 50%;
+    float: right;
+   
+}
+#Benefícios{
+    width: 100%
+}
+
+/*
+.caixaMae{
+display:inline-block;
+width: 200px;
+height: 200px;
+background: red;
+z-index: 2;
+
+
+}
+.caixaFilha{
+display: inline-block; 
+width:100px;
+height: 100px;
+background: black;
+position: relative;
+z-index: 1;
+}
+
+*/

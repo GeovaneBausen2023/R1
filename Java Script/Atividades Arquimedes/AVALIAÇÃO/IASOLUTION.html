@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gerenciamento de Recebimentos</title>
+</head>
+<body>
+    <h1>Stark's Armory - Gerenciamento de Recebimentos</h1>
+    
+    <label for="valor">Valor da venda:</label>
+    <input type="number" id="valor" min="0"><br><br>
+    
+    <label for="formaPagamento">Forma de pagamento:</label>
+    <select id="formaPagamento">
+        <option value="1">À vista</option>
+        <option value="2">Parcelado em 2 vezes</option>
+        <option value="3">Parcelado em 3 vezes</option>
+        
+    </select><br><br>
+    
+    <button onclick="registrarRecebimento()">Registrar Recebimento</button>
+    
+    <h2>Recebimento Registrado:</h2>
+    <p id="recebimentoImediato"></p>
+    <p id="recebimento30dias"></p>
+    <p id="recebimento60dias"></p>
+    
+    <h2>Estatísticas:</h2>
+    <p id="totalRecebido"></p>
+    <p id="percentual60dias"></p>
+    <p id="mediaRecebimentos"></p>
+    
+    <script>
+        function registrarRecebimento() {
+            var valorElement = document.getElementById("valor");
+            var formaPagamentoElement = document.getElementById("formaPagamento");
+            var recebimentoImediatoElement = document.getElementById("recebimentoImediato");
+            var recebimento30diasElement = document.getElementById("recebimento30dias");
+            var recebimento60diasElement = document.getElementById("recebimento60dias");
+            
+            // Obter valores dos campos
+            var valor = valorElement.value;
+            var formaPagamento = formaPagamentoElement.value;
+            
+            // Verificar se os campos foram preenchidos corretamente
+            if (valor === "" || formaPagamento === "") {
+                alert("Preencha todos os campos.");
+                return;
+            }
+            
+            valor = parseFloat(valor);
+            
+            if (valor <= 0 || formaPagamento < 1 || formaPagamento > 3) {
+                alert("Valores inválidos.");
+                return;
+            }
+            
+            // Calcular os valores a serem recebidos
+            var recebimentoImediato, recebimento30dias, recebimento60dias;
+            
+            switch (formaPagamento) {
+                case "1":
+                    recebimentoImediato = valor;
+                    recebimento30dias = 0;
+                    recebimento60dias = 0;
+                    break;
+                case "2":
+                    recebimentoImediato = valor / 2;
+                    recebimento30dias = valor / 2;
+                    recebimento60dias = 0;
+                    break;
+                case "3":
+                    recebimentoImediato = valor / 3;
+                    recebimento30dias = valor / 3;
+                    recebimento60dias = valor / 3;
+                    break;
+            }
+            
+            // Exibir os valores calculados no HTML
+            recebimentoImediatoElement.textContent = "Valor recebido de imediato: R$ " + recebimentoImediato.toFixed(2);
+            recebimento30diasElement.textContent = "Valor a ser recebido em 30 dias: R$ "

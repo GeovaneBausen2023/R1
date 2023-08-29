@@ -1,0 +1,23 @@
+
+body{
+    background-color: rgb(14, 16, 16);
+    font: normal 15pt Arial
+    
+}
+h2{
+    color:rgb(255, 255, 255)
+}
+p{
+  color: rgb(255, 255, 255);
+}
+.container {
+  margin: 20px auto;
+  width: 80%;
+  border: 1px solid rgb(255, 255, 255);
+  padding: 10px;
+}
+pre {
+  font-family: Arial;
+  font-size: 15pt;
+  color: rgb(255, 255, 255);
+}

@@ -1,0 +1,33 @@
+body{
+    color:#009a15;
+    font-size: 25px;
+    background-color: rgb(229, 222, 222);
+    text-align:justify;
+    padding: 5px;
+} 
+
+.bloco{
+    background-color: black;
+    padding-top: 0px;
+    padding-right:10px ;
+    padding-left: 10px;
+    padding-bottom: 0px;
+   
+}
+#dados {
+    padding-left: 20px;
+}
+#outDados{
+    background-color: black;
+    padding-top: 0px;
+    padding-right:10px ;
+    padding-left: 10px;
+    padding-bottom: 0px;
+}
+h1{
+    text-align: center;
+}
+h3 {
+    display: block;
+    width: 200px; 
+}

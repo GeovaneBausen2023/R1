@@ -1,0 +1,45 @@
+h1,h2{
+    text-align: center;
+}
+
+.bloco1{
+    background-color: #F2F2F2; /* altera a cor de fundo */
+    padding: 20px; /* espaço interno do bloco */
+    border: 1px solid #DDD; /* borda do bloco */
+}
+.bloco1 h3 {
+    font-size: 18px; /* tamanho do título */
+    margin: 0 0 10px; /* espaço abaixo do título */
+}
+.bloco1 p {
+    font-size: 16px; /* tamanho do texto */
+    line-height: 1.5; /* altura da linha do texto */
+    margin: 0; /* remove a margem padrão */
+}
+.bloco1 ul {
+    font-size: 16px; /* tamanho do texto */
+    line-height: 1.5; /* altura da linha do texto */
+    margin: 0; /* remove a margem padrão */
+    text-align: justify;
+}
+
+.bloco2{
+    background-color: #a7a7a7; /* altera a cor de fundo */
+    padding: 20px; /* espaço interno do bloco */
+    border: 1px solid #DDD; /* borda do bloco */
+}
+.bloco2 h3 {
+    font-size: 18px; /* tamanho do título */
+    margin: 0 0 10px; /* espaço abaixo do título */
+}
+.bloco2 p {
+    font-size: 16px; /* tamanho do texto */
+    line-height: 1.5; /* altura da linha do texto */
+    margin: 0; /* remove a margem padrão */
+}
+.bloco2 ul {
+    font-size: 16px; /* tamanho do texto */
+    line-height: 1.5; /* altura da linha do texto */
+    margin: 0; /* remove a margem padrão */
+    text-align: justify;
+}

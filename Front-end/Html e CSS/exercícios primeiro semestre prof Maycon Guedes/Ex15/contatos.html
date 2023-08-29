@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Academia Equilíbrio</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="styleContatos.css">
+</head>
+
+<body>
+  <header>
+    <div class="caixa">
+      <l>
+        <image id="logo" src="logo.png"></image>
+      </l>
+      <nav>
+        <ul>
+          <li><a href="index14.html">Home</a></li>
+          <li><a href="produtos14.html">Produtos</a></li>
+          <li><a href="contatos.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <form action="">
+      <!--O atributo action define o local (uma URL) em que os dados recolhidos do formulário devem ser enviados, por enquanto vamos apenas ignorar este atributo.-->
+
+
+      <label for="nomeSobrenome">Nome e sobrenome:</label>
+      <input class="input-block" type="text" id="nomeSobrenome" required placeholder="nome e sobrenome" />
+      <label for="E-mail">E-mail:</label>
+      <input class="input-block" type="text" id="nomeSobrenome" required placeholder="seu-email@dominio.com" />
+      <label for="Telefone">Telefone:</label>
+      <input class="input-block" type="text" id="Telefone" required placeholder="(xx) xxxx-xxxx" />
+      <label for="mensagem">Mensagem:</label>
+      <textarea class="input-block" id="mensagem" cols="30" rows="10"></textarea>
+
+      <fieldset>
+        <legend>Como prefere o nosso contato:</legend>
+        <br>
+        <label for="radio-email">
+          <input type="radio" class="input-inline" name="contato" value="email" id="radio-email" />E-mail
+        </label>
+        <label for="radio-telefone">
+          <input type="radio" class="input-inline" name="contato" value="telefone" id="radio-telefone" />Telefone
+        </label>
+        <label for="radio-whats">
+          <input type="radio" class="input-inline" name="contato" value="Whatsapp" id="radio-whats" />Whatsapp
+        </label>
+      </fieldset>
+
+
+      <fieldset><!--Grupo de dados-->
+        <legend>Qual horário prefere ser atendido?</legend>
+        <select nome="" id="">
+          <option value="">Manhã</option>
+          <option value="">Tarde</option>
+          <option value="">Noite</option>
+        </select>
+      </fieldset>
+      <br>
+
+      <label><input class="input-inline" type="checkbox" checked>Gostaria de receber nossas novidades por e-mail
+      </label>
+
+      <input type="submit" class="enviar" value="Enviar Formulário">
+
+      <table>
+        <thead>
+          <tr>
+            <th colspan="2">Horário de funcionamento</th>
+          </tr>
+          <tr>
+            <th>Dia</th>
+            <th>Horário</th>
+          </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>Segunda-feira</td>
+          <td>6h as 21h</td>
+        </tr>
+        <tr>
+          <td>Terça-feira</td>
+          <td>6h as 21h</td>
+        </tr>
+        <tr>
+          <td>Quarta-feira</td>
+          <td>6h as 21h</td>
+        </tr>
+        <tr>
+          <td>Quinta-feira</td>
+          <td>6h as 21h</td>
+        </tr>
+        <tr>
+          <td>Sexta-feira</td>
+          <td>6h as 21h</td>
+        </tr>
+        <tr>
+          <td>Sábado</td>
+          <td>6h as 11h</td>
+        </tr>
+        <tr>
+          <td>Domingo</td>
+          <td>Fechado</td>
+        </tr>
+      </tbody>
+      </table>
+
+  </main>
+  <footer>
+    <h3>.</h3>
+    <image id="logoBranco" src="logo-branco.png"></image>
+    <p class="copyright">&copy; Copyright Academia Equilíbrio</p>
+  </footer>
+</body>
+
+</html>

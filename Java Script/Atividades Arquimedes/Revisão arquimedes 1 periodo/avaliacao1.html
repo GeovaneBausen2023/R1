@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>avaliacao1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main>
+    <h1>Loja Stark's Armory: Gerenciamento de Recebimentos</h1>
+    Nome do produto: <input type="text" id="inNomeProduto"><br><br>
+
+    Valor do produto:<input type="number" id="inValorProduto" placeholder="$"><br><br>
+
+    <label for="formaPagamento">Forma de pagamento:</label>
+    <select id="inSlectFormaPagamento">
+      <option value="avista">À vista</option>
+      <option value="parcelado2x">Parcelado em 2 vezes</option>
+      <option value="parcelado3x">Parcelado em 3 vezes</option>
+    </select>
+
+    <input type="button" value="Registrar recebimento" id="btRegistrar">
+
+    <h3 id="outTotal"></h3>
+
+    <div class="statistics">
+      <div class="statistic">
+        <h4>Total de recebimentos imediato:</h4>
+        <p id="totalRecebidoDeimediato"></p>
+      </div>
+      <div class="statistic">
+        <h4>Total a receber em 30 dias:</h4>
+        <p id="totalRecebido30Dias"></p>
+      </div>
+      <div class="statistic">
+        <h4>Total a receber em 60 dias:</h4>
+        <p id="totalRecebido60Dias"></p>
+      </div>
+
+      <div class="statistic">
+        <h4>Média de recebimentos:</h4>
+        <p id="outMedia"></p>
+      </div>
+    </div>
+
+  </main>
+  <script src="avaliacao1.js"></script>
+</body>
+
+</html>

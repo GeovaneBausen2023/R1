@@ -1,0 +1,79 @@
+header {
+    background-color: #d3d3d3;
+    padding: 20px 0;
+}
+body {
+    background-color: rgb(255, 255, 255);
+}
+.caixa {
+    width: 940px;
+    background: #d3d3d3;
+    position: relative;
+    margin: 0 auto;
+}
+nav li {
+    display: inline-block;
+    margin: 0 0 0 15px;
+    background-color: #d3d3d3;
+}
+nav a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none
+}
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+#banner{
+    width: 100%;
+} 
+.bloco1{
+    background-color: #a9a9a9; 
+    width: 100%;
+}  
+h1{
+    text-align:center;
+    border-top:5px solid #000000;
+    padding: 20px;
+    margin: 10px;
+    font-size: 30px; 
+}
+p{
+    font-size: 20px;
+    padding: 10px;
+}
+strong{
+    color:rgb(255, 0, 51);
+}
+#fontegrande{
+    font-size: 22px;
+    text-align: center;
+}
+.titulo2{
+    padding: 10px;
+    margin: 10px;
+    font-size: 30px; 
+}
+
+ul {
+    display:block;
+    width: 20%;
+    float: left;  
+    font-size: 20px;
+  }
+  li{
+   padding-left: 20px;
+  }
+  
+  .imagembeneficios {
+    width: 50%;
+    float: left;
+  }
+  .imagembeneficios img {
+    width: 100%;
+    padding-left: 300px;
+  }

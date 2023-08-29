@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Caixa  Mercearia</title>
+</head>
+<body>
+    <h1>Compra de Produtos</h1>
+
+    <!-- Campo de entrada para o valor do produto -->
+    <p>Valor do Produto: R$ <input type="number" id="inValor"></p>
+
+    <!-- Campo de entrada para a quantidade do produto -->
+    <p>Quantidade do Produto: <input type="number" id="inQtd"></p>
+
+    <!-- Botões para somar e zerar a compra -->
+    <p>
+        <input type="button" value="Somar" id="btSomar">
+        <input type="button" value="Zerar" id="btZerar">
+    </p>
+
+    <!-- Exibição do total da compra -->
+    <h3 id="outTotal">Total = R$0.00</h3>
+
+    <!-- Exibição da quantidade de itens da compra -->
+    <h4 id="outQtdItens">Quantidade Itens = 0</h4>
+
+    <!-- Referência ao arquivo JavaScript -->
+    <script src="caixaMercearia.js"></script>
+</body>
+</html>

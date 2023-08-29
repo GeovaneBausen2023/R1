@@ -1,0 +1,89 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilo do corpo da página */
+  body {
+    background-color: #F3EFEF;
+    font-family: "Segoe UI", sans-serif;
+  }
+  
+  /* Estilo do título */
+  h1 {
+    text-align: center;
+    margin: 50px 0;
+    font-size: 2.5rem;
+    color: #BB5548;
+    text-shadow: 1px 1px 0 #D3C3C3;
+  }
+  
+  /* Estilo das caixas */
+  .mesa, .estoque {
+    width: 300px;
+    height: 150px;
+    margin: 50px auto;
+    background-color: #F8E8D8;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  /* Estilo dos ícones */
+  .mesa::before, .estoque::before {
+    content: "";
+    background-image: url("mesa.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .estoque::before {
+    background-image: url("estoque.png");
+  }
+  
+  /* Estilo do texto */
+  .mesa p, .estoque p {
+    font-size: 1.2rem;
+    color: #615A5A;
+    margin-top: 10px;
+  }
+  
+  /* Estilo do botão */
+  button {
+    background-color: #BB5548;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-top: 20px;
+  }
+  
+  button:hover {
+    background-color: #D18475;
+  }
+  
+  /* Estilo do rodapé */
+  footer {
+    text-align: center;
+    margin-top: 50px;
+    color: #615A5A;
+  }
+  

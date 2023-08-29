@@ -1,0 +1,43 @@
+#banner{
+    width: 100%;
+} 
+.principal{
+    background-color: #CCCCCC;
+    padding: 10px;
+}  
+h1{
+    text-align:center;
+    border-top:0px solid #000000;
+    padding-left: 20px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+}
+p{
+    font-size: 20px;
+    }
+    #fontegrande{
+    font-size: 30px;
+    }
+    strong{
+    color:crimson;
+    }
+.titulo{
+    display: inline-block;
+    max-width:20%;  /*largura máxima*/
+    max-height: 50%;/*altura máxima*/  
+}
+.beneficio{
+    font-size: 20px;
+    display: inline-block;
+    max-width:30%;  /*largura máxima*/
+    max-height: 50%;/*altura máxima*/  
+}
+#imagemBeneficio{
+    display: inline-block;
+    max-width:50%;  /*largura máxima*/
+    max-height: 50%;/*altura máxima*/
+   margin-top: 10px;
+}
+
+
+
