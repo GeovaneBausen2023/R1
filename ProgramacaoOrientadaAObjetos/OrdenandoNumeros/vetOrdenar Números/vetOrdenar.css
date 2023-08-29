@@ -1,0 +1,26 @@
+
+div{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif;
+    color: bisque;
+    background-color: black;
+    font-size: 20px;
+    border: 5px black solid;
+    text-align-last: center;
+    margin: 0px;
+    padding: 0px;
+}
+input{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif;
+    color: bisque;
+    background-color: black;
+    padding: 5px;
+    font-size: 18px;
+    border: 2px bisque solid;
+    border-radius: 10px;
+}
+input:hover{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif;
+    color: black;
+    background-color: bisque;
+    border: 2px black solid;
+}
