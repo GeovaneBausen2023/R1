@@ -1,7 +1,7 @@
 <?php
 include "site.config.php";
 
-CriaHeader("Projeto Metas");
+CriaHeader("Home");
 ?>
 <?php
 echo ' <main>

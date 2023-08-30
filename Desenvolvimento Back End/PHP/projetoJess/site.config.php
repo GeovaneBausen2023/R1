@@ -32,26 +32,29 @@ function criaHeader($titulo) {
 
 function criaFooter() {
     echo ' </main>
-    <footer>
-        <iconify-icon icon="ic:outline-copyright"></iconify-icon>
-        <div>Projeto desenvolvido por alunos do curso de TSI</div>
+        <footer>
+        <p></p>
+        <div>
+            <iconify-icon icon="ic:outline-copyright"></iconify-icon>   
+            Projeto desenvolvido por alunos do curso de TSI</div>
         <ul class="flex-center-column"> 
             <li><a href="#">Sobre nós</a></li>
             <li><a href="#">Contato</a></li>
         </ul>
-    </footer>
+        </footer>
 
-    <!-- <img src="img/equipe.svg" alt="Meu SVG" width="100" height="100"> -->
-
-</body>
+    </body>
 </html>';
 }
-
-function criaEquipe($nome) {
-    return '<div class="equipe flex-center-column mr-2 p-2">
-    <img class="img-equipe efeito-h" src="img/equipe.svg" alt="Logo MetaTSI" width="100" height="100"> 
-    <p>Equipe '.$nome.'</p>
-    </div>';   
+function criaEquipe($nomeEquipe) {
+   
+    $nomeEquipe = 'Equipe ' . $nomeEquipe;
+    echo '
+    <div class="equipe flex-center-column mr-2">
+        <img class="img-equipe efeito-h" src="img/equipe.svg" alt="Logo MetaTSI" width="150" height="150"> 
+        <p>' . $nomeEquipe . '</p>
+    </div>';
+ 
 }
 
 ?>

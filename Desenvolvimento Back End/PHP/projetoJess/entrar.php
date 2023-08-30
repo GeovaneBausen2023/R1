@@ -1,7 +1,7 @@
 <?php
 include "site.config.php";
 
-CriaHeader("entrar");
+CriaHeader("Entrar");
 
 ?>
 

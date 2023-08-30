@@ -1,11 +1,16 @@
 <?php
 include "site.config.php";
 
-CriaHeader("entrar");
+CriaHeader("Equipes");
 
 ?>
 
-pagina de equipes teste...
+<?php 
+
+for($indice=1; $indice <=5; $indice++) {
+    criaEquipe($indice);
+}
+?>
 
 <?php
 CriaFooter();
