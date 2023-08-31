@@ -57,4 +57,26 @@ function criaEquipe($nomeEquipe) {
  
 }
 
+function criaLogin(){
+ 
+    echo ' <main class="flex-center-row">
+    <div class="login-container">
+
+          <form action="site.login.php" method="post">
+          <label for="username">Usuário:</label>
+          <input type="text" id="username" name="username" required>
+          
+          <label for="password">Senha:</label>
+          <input type="password" id="password" name="password" required>
+          
+          <button type="submit">Entrar</button>
+
+
+
+        </form>
+      </div>
+
+</main>';
+}
+
 ?>

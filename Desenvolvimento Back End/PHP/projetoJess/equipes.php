@@ -7,7 +7,7 @@ CriaHeader("Equipes");
 
 <?php 
 
-for($indice=1; $indice <=5; $indice++) {
+for($indice=1; $indice <=3; $indice++) {
     criaEquipe($indice);
 }
 ?>

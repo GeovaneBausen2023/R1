@@ -5,8 +5,11 @@ CriaHeader("Entrar");
 
 ?>
 
-pagina de login teste...
+<?php
+criaLogin();
+?>
 
 <?php
 CriaFooter();
 ?>
+
