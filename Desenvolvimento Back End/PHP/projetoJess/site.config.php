@@ -16,7 +16,7 @@ function criaHeader($titulo) {
     <body>
         <header>
             <div class="logo flex-center-row">
-                <img src="img/logo.svg" alt="Logo MetaTSI" width="50" height="50"> 
+            <a href="telaGeo.php"><img src="img/logo.svg" alt="Logo MetaTSI" width="50" height="50"></a>
                 <div>MetasTSI</div>
             </div>
     
