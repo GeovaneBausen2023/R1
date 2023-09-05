@@ -7,6 +7,7 @@ function criaHeader($titulo) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Projeto MetasTSI :: '.$titulo.'</title>
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/styleLogin.css">
         <link rel="icon" href="img/logo.PNG" type="image/png">
     
          <!-- Inclua o Iconify Core para lidar com os ícones -->

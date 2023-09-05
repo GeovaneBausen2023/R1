@@ -1,6 +1,4 @@
 <?php
-include "site.config.php";
-
 
     $username = $_POST['username'];
     $password = $_POST['password'];
@@ -11,7 +9,7 @@ include "site.config.php";
     header('Location:equipes.php');
     } else {
         //echo 'Tente novamente';
-        header('Location: entrar.php?error="LOGIN_INVALIDO"');
+        header('Location:entrar.php?error=LOGIN');
 
     }
 

@@ -1,13 +1,14 @@
 <?php
 include "site.config.php";
 
-$error_message = $_GET['error'];
+$msg = @$_GET['error'];
 
 // Exibir a mensagem de erro em um alerta
-if ($error_message = 'LOGIN_INVALIDO') {
+if ($msg == 'LOGIN') {
     echo '<script>alert("senha incorreta");</script>';
 }
-
+?>
+<?php
 CriaHeader("Entrar");
 
 ?>
