@@ -1,7 +1,11 @@
 <?php
 include "site.config.php";
+        //@removo worn mensagem de erro ao dar reload na page
+        if ($msg =''){
 
-$msg = @$_GET['error'];
+        }else{
+        $msg = @$_GET['error'];
+        }
 
 // Exibir a mensagem de erro em um alerta
 if ($msg == 'LOGIN') {
