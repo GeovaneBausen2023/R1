@@ -1,7 +1,7 @@
 <?php
 include 'php/site.config.php';
 
-criaHeader('Site do Êndrio');
+criaHeader('Site do geo');
 criaFooter();
 ?>
 

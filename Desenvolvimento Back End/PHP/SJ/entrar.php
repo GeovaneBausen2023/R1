@@ -22,29 +22,22 @@ if ($sucesso != "") {
   </div>';
 }
 
-
 criaHeader('Entrar');
-
-echo $msg;
 ?>
 
 
+<main>
+        <div class="principalLoginEsquerda">
+            Bem vindo ao Santo Japa!!<br> Faça login para entrar no sistema!!
+        </div>
 
-<div class="flex-center-column">
+        <div class="principalLoginDireita">
 
-    <div class="flex-center-row">
-        <div class="container box-50vw">
-                Cadastre-se no MetasTSI para configurar sua equipe e <strong>determinar/organizar</strong> suas tarefas e de sua equipe de forma prática.
-            </div>
+            <form action="php/site.login.php" method="POST">
 
-            <div class="lado-direito flex-center-column">
-            <!--   <img class="img-equipe efeito-h" src="img/equipe.svg" alt="Equipe" width="150" height="150"> 
-                <button class="btn-green efeito-ah">Montar Equipe</button>
-    -->
+                <fieldset class="quadroLogin">
+                    <p>LOGIN</p><br>
 
-                <form action="php/site.login.php" method="POST">
-                <fieldset class="fd-center">
-                    <p>LOGIN</p>
                     <label class="lb-center">E-mail:
                         <input class="in-center" name="email" type="text" placeholder="email-valido@dominio.com">
                     </label>
@@ -52,19 +45,18 @@ echo $msg;
                     <label class="lb-center">Senha:
                         <input class="in-center" name="senha"  type="password" placeholder="4 a 6 dígitos">
                     </label>
+
                     <label>
                         <input id="bt-entrar" type="submit" value="ENTRAR">
                     </label>
-                    <img src="logo.svg" alt="">
+                   
                 </fieldset>
+
             </form>
+        </div>
 
-
-            </div>
-    </div>
-</div>    
+</main>
 
 <?php
 criaFooter();
 ?>
-
