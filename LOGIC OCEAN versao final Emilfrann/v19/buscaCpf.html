@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <title>TsI</title>
+  <link rel="stylesheet" href="../v19/stylesheet/reset.css">
+  <link rel="stylesheet" href="../v19/stylesheet/styleGeral.css">
+  <link rel="stylesheet" href="../v19/stylesheet/buscaPorCPF.css">
+</head>
+
+<body>
+  <header>
+    <div class="caixaHeader940px">
+      <l>
+        <img class="logoHeader" src="../v19/imagens-geral/logoLO .png" alt="Logo">
+      </l>
+      <nav>
+        <ul>
+          <li><a href="../v19/index.html">Home</a></li>
+          <li><a href="../v19/vendas.html">Vendas</a></li>
+          <li><a href="../v19/contatos.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+<br>
+  <main>
+   <section>
+    <div>
+      <table id="myTable">
+        <thead>
+          <tr>
+            <th colspan="3">Média dos Valores</th>
+          </tr>
+          <tr>
+            <th>CPF</th>
+            <th>Média Valores Vendidos</th>
+            <th>Média Comissões</th>
+          </tr>
+        </thead>
+        <tbody id="tbMediaValores">
+        </tbody>
+      </table>
+
+      <script src="listagemDeVendas.js"></script>
+    </div>
+    <div id="input">
+     <p class="texto">Informe o CPF que deseja pesquisar:</p>
+     <p><input type="text" id="cpfInformado" placeholder="000.000.000-00"></p>
+     <p class="texto"><strong>*obs:</strong> escreva conforme o modelo acima.</p>
+     <p><input type="button" value="Pesquisar" id="btPesquisar"> <input type="button" value="Limpar Barra de Pesquisa" id="btLimpar"></p>
+   
+    </div>
+   </section>
+  </main> 
+  <footer>
+    <img class="logoBranco" src="imagens-geral/logoLO .png" alt="Logo">
+    <p class="copyright">&copy; Copyright Logic Ocean</p>
+  </footer>
+
+  <script src="../v19/vetor.js"></script>
+  <script src="../v19/buscaPorCPF.js"></script>
+  
+</body>
+
+</html>

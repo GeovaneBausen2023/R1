@@ -1,0 +1,49 @@
+
+
+
+.principalLoginEsquerda {
+    flex: 1;
+    padding: 50px;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.principalLoginDireita {
+    flex: 1;
+    padding: 50px;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.quadroLogin {
+    background-color: #000;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.lb-center, .in-center {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#bt-entrar {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color:  #008658; /* Green */
+    color: #fff; /* White */
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.in-center:focus {
+   border-color:#FF0000; /* Red */
+}

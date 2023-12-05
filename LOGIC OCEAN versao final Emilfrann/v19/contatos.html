@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <title>TsI</title>
+  <link rel="stylesheet" href="../v19/stylesheet/reset.css">
+  <link rel="stylesheet" href="../v19/stylesheet/styleGeral.css">
+  <link rel="stylesheet" href="../v19/stylesheet/styleContatos.css">
+</head>
+
+<body>
+  <header>
+    <div class="caixaHeader940px">
+      <l>
+        <image class="logoHeader" src="../v19/imagens-geral/logoLO .png"></image>
+      </l>
+      <nav>
+        <ul>
+          <li><a href="../v19/index.html">Home</a></li>
+          <li><a href="../v19/vendas.html">Vendas</a></li>
+          <li><a href="../v19/contatos.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <form action="">
+      <!--O atributo action define o local (uma URL) em que os dados recolhidos do formulário devem ser enviados, por enquanto vamos apenas ignorar este atributo.-->
+
+
+      <label for="nomeSobrenome">Nome e sobrenome:</label>
+      <input class="input-block" type="text" id="nomeSobrenome" required placeholder="nome e sobrenome" />
+      <label for="E-mail">E-mail:</label>
+      <input class="input-block" type="text" id="nomeSobrenome" required placeholder="seu-email@dominio.com" />
+      <label for="Telefone">Telefone:</label>
+      <input class="input-block" type="text" id="Telefone" required placeholder="(xx) xxxx-xxxx" />
+      <label for="mensagem">Mensagem:</label>
+      <textarea class="input-block" id="mensagem" cols="30" rows="10"></textarea>
+
+      <fieldset>
+        <legend>Como prefere o nosso contato:</legend>
+        <br>
+        <label for="radio-email">
+          <input type="radio" class="input-inline" name="contato" value="email" id="radio-email" />E-mail
+        </label>
+        <label for="radio-telefone">
+          <input type="radio" class="input-inline" name="contato" value="telefone" id="radio-telefone" />Telefone
+        </label>
+        <label for="radio-whats">
+          <input type="radio" class="input-inline" name="contato" value="Whatsapp" id="radio-whats" />Whatsapp
+        </label>
+      </fieldset>
+
+      <br>
+      <fieldset><!--Grupo de dados-->
+        <legend>Qual horário prefere ser atendido?</legend>
+        <br>
+        <select nome="" id="">
+          <option value="">Manhã</option>
+          <option value="">Tarde</option>
+          <option value="">Noite</option>
+        </select>
+      </fieldset>
+      <br>
+
+      <label><input class="input-inline" type="checkbox" checked>Gostaria de receber nossas novidades por e-mail
+      </label>
+
+      <input type="submit" class="enviar" value="Enviar Formulário">
+
+  </main>
+  <footer>
+    <image class="logoBranco" src="imagens-geral/logoLO .png"></image>
+    <p class="copyright">&copy; Copyright Logic Ocean</p>
+  </footer>
+
+
+</body>
+
+</html>
