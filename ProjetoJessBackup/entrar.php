@@ -8,8 +8,8 @@ $sucesso = @$_GET['sucesso'];
 $msg = "";
 
 if ($erro != "") {
-    $msg = '<div class="alert">
-    <span class="iconify" data-icon="mdi-alert" data-inline="false"></span>
+    $msg = '<div class="alerta">
+    <iconify-icon icon="line-md:alert"></iconify-icon>
     <p><strong>Atenção:</strong> A seguinte mensagem de erro foi informada: '.$erro.'</p>
   </div>';
 }

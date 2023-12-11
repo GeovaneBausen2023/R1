@@ -133,4 +133,13 @@ function criaEquipe($nome) {
     </div>';   
 }
 
+function verificaString($str){
+    if(isset($str)&&$str !="")
+     return true;
+else
+    return false;
+
+    
+}
+
 ?>

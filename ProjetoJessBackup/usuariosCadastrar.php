@@ -8,8 +8,23 @@ include "php/UsuarioControl.class.php";
 $userControl = new UsuarioControl($conexao);
 /*verificação*/
 paginaRestrita($_SESSION["logado"]);
+
+$erro=@$_GET['error'];
+$sucesso = @$_GET['sucesso'];
+
+//echo $msg; 
+$msg = "";
+if ($erro != "") {
+    $msg = '<div class=" alerta">
+    <iconify-icon icon="line-md:alert"></iconify-icon>
+    <p><strong>Atenção:</strong> A seguinte mensagem de erro foi informada: '.$erro.'</p>
+  </div>';
+}
+
 criaHeader('Usuários :: Cadastrar', $_SESSION["login"]);
+//echo $msg;
 echo '<div> <h1>Cadastro de Usuários</h1>';
+echo $msg;
 ?>
 
 <form  action="usuariosCadastrarAcao.php" method="POST">

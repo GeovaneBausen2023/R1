@@ -46,18 +46,18 @@ class UsuarioControl {
         return $usuarios;
     }
 
-
-
     public function atualizar($obj) {        
 
-        $sql = "UPDATE usuarios SET nome='".$obj->getNome()."', email='".$obj->getEmail()."', senha='".$obj->getSenha()."' WHERE id='".$obj->getId()."'";
+        $sql = "UPDATE usuarios SET login='".$obj->getNome()."', email='".$obj->getEmail()."', senha='".$obj->getSenha()."' WHERE id='".$obj->getId()."'";
 
         $result = $this->conexao->query($sql);
 
         if ($result) {
-            echo "Objeto atualizado com sucesso!";
+            return true;
+           // echo "Objeto atualizado com sucesso!";
         } else {
-            echo "Erro ao atualizar o objeto.";
+            return false;
+           // echo "Erro ao atualizar o objeto.";
         }
 
         //print_r($result);
@@ -73,9 +73,11 @@ class UsuarioControl {
         $result = $this->conexao->query($sql);
 
         if ($result) {
-            echo "Objeto excluído com sucesso!";
+            return true;
+            //echo "Objeto excluído com sucesso!";
         } else {
-            echo "Erro ao excluir o objeto.";
+            return false;
+            //echo "Erro ao excluir o objeto.";
         }
 
         //print_r($result);
@@ -90,11 +92,13 @@ class UsuarioControl {
         $result = $this->conexao->query($sql);
 
         if ($result) {
-            echo "Objeto cadastrado com sucesso!";
+            //echo "Objeto cadastrado com sucesso!";
+            return true;
         } else {
-            echo "Erro ao cadastrar objeto: ";
+            //echo "Erro ao cadastrar objeto: ";
+            return false;
         }
-
+        
         //print_r($result);
 
 
@@ -119,7 +123,7 @@ class UsuarioControl {
             return $usuario;
             //return $result->fetch_assoc();
         } else {
-            echo "Nao encontrou o id: ". $id;
+          //  echo "Nao encontrou o id: ". $id;
             return null;
         }
     }

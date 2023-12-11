@@ -254,3 +254,19 @@ footer ul li a {
         background-color: #e3e3e3;
         cursor: pointer;
     }
+    .alerta {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        margin: 20px;
+        background-color: #f8d7da;
+        border: 1px solid #f5c6cb;
+        border-radius: 5px;
+        color: #721c24;
+      }
+      
+      .alerta iconify-icon {
+        font-size: 36px;
+        margin-right: 10px;
+      }
+      
