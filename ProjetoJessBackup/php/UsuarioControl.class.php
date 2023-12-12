@@ -46,6 +46,29 @@ class UsuarioControl {
         return $usuarios;
     }
 
+    public function pesquisar($filtro) {
+        $sql = "SELECT * FROM usuarios WHERE login LIKE '%$filtro%' || email LIKE '%$filtro%' ";
+        $result = $this->conexao->query($sql);
+
+        $usuarios = array();
+
+        if ($result->num_rows > 0) {
+            while ($row = $result->fetch_assoc()) {
+                
+                //($nome = "", $email = "", $senha = "")
+                //$usuarios[] = $row;
+                $usuario = new Usuario($row["login"], $row["email"], $row["senha"]);
+                $usuario->setId($row["id"]);
+                $usuarios[] = $usuario;
+            }
+        }
+
+        return $usuarios;
+    }
+
+
+
+
     public function atualizar($obj) {        
 
         $sql = "UPDATE usuarios SET login='".$obj->getNome()."', email='".$obj->getEmail()."', senha='".$obj->getSenha()."' WHERE id='".$obj->getId()."'";
